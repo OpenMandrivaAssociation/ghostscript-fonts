@@ -1,7 +1,7 @@
 Summary:	Fonts for the GhostScript PostScript(TM) interpreter
 Name:		ghostscript-fonts
 Version:	8.11
-Release:	%mkrel 7
+Release:	%mkrel 8
 License:	GPL
 Group:		Publishing
 Url:		http://sourceforge.net/projects/gs-fonts/
@@ -31,12 +31,17 @@ rm -f %buildroot/%_datadir/fonts/default/ghostscript/fonts.{dir,scale}
 %clean
 rm -fr %buildroot
 
+
 %post
-[ -x %{_bindir}/fc-cache ] && %{_bindir}/fc-cache -f %{_datadir}/fonts/default/ghostscript
+[ -x %{_bindir}/fc-cache ] && %{_bindir}/fc-cache 
+
+%postun
+if [ "$1" = "0" ]; then
+  [ -x %{_bindir}/fc-cache ] && %{_bindir}/fc-cache 
+fi
 
 %files
 %defattr(-,root,root,-)
-%dir %_datadir/fonts/
 %dir %_datadir/fonts/default/
 %dir %_datadir/fonts/default/ghostscript/
 %_datadir/fonts/default/ghostscript/*.pfa
