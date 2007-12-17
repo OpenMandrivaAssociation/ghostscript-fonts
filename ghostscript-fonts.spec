@@ -6,7 +6,6 @@ License:	GPL
 Group:		Publishing
 Url:		http://sourceforge.net/projects/gs-fonts/
 Source:		http://heanet.dl.sourceforge.net/sourceforge/gs-fonts/ghostscript-fonts-other-6.0.tar.bz2
-BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildArch:	noarch
 Requires(post):	fontconfig
 
