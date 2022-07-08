@@ -1,7 +1,7 @@
 Summary:	Fonts for the GhostScript PostScript(TM) interpreter
 Name:		ghostscript-fonts
-Version:	8.11
-Release:	30
+Version:	9.06
+Release:	1
 License:	GPLv2
 Group:		Publishing
 Url:		http://sourceforge.net/projects/gs-fonts/
