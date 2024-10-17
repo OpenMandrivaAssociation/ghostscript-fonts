@@ -4,7 +4,7 @@ Version:	9.06
 Release:	2
 License:	GPLv2
 Group:		Publishing
-Url:		http://sourceforge.net/projects/gs-fonts/
+Url:		https://sourceforge.net/projects/gs-fonts/
 Source0:	http://heanet.dl.sourceforge.net/sourceforge/gs-fonts/ghostscript-fonts-other-6.0.tar.bz2
 BuildArch:	noarch
 
